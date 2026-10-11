@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (tools/policy.mjs, npx serve)
+node_modules/
+npm-debug.log*
+
+# Python (python3 -m http.server)
+__pycache__/
+
+# Local env / scratch
+.env
+.env.*
+*.log
+*.tmp
+
+# Claude Code local settings
+.claude/settings.local.json

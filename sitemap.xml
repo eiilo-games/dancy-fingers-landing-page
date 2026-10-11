@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<url>
+		<loc>https://dancy-fingers.com/</loc>
+		<lastmod>2026-10-17</lastmod>
+		<image:image><image:loc>https://dancy-fingers.com/og.png</image:loc></image:image>
+		<image:image><image:loc>https://dancy-fingers.com/shots/title.webp</image:loc></image:image>
+		<image:image><image:loc>https://dancy-fingers.com/shots/gameplay.webp</image:loc></image:image>
+		<image:image><image:loc>https://dancy-fingers.com/shots/song-select.webp</image:loc></image:image>
+		<image:image><image:loc>https://dancy-fingers.com/shots/results.webp</image:loc></image:image>
+		<image:image><image:loc>https://dancy-fingers.com/shots/generate-result.webp</image:loc></image:image>
+		<image:image><image:loc>https://dancy-fingers.com/shots/high-scores.webp</image:loc></image:image>
+		<image:image><image:loc>https://dancy-fingers.com/shots/trophies.webp</image:loc></image:image>
+		<image:image><image:loc>https://dancy-fingers.com/icon.png</image:loc></image:image>
+	</url>
+	<url>
+		<loc>https://dancy-fingers.com/privacy.html</loc>
+		<lastmod>2026-10-11</lastmod>
+	</url>
+</urlset>

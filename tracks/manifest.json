@@ -1,0 +1,124 @@
+{
+ "tracks": [
+  {
+   "id": "01_pixel_odyssey",
+   "title": "Pixel Odyssey",
+   "artist": "DJ Prism",
+   "style": "Synthpop",
+   "bpm": 125,
+   "key": "D mixolydian",
+   "duration": 99.15,
+   "preview": 3.23,
+   "levels": {
+    "easy": 3,
+    "normal": 4,
+    "hard": 6
+   }
+  },
+  {
+   "id": "02_glass_odyssey",
+   "title": "Glass Odyssey",
+   "artist": "DJ Lumen Crew",
+   "style": "Chiptune",
+   "bpm": 137,
+   "key": "F# mixolydian",
+   "duration": 101.25,
+   "preview": 20.5,
+   "levels": {
+    "easy": 3,
+    "normal": 5,
+    "hard": 7
+   }
+  },
+  {
+   "id": "03_ultra_skyline",
+   "title": "Ultra Skyline",
+   "artist": "DJ Cipher",
+   "style": "House",
+   "bpm": 127,
+   "key": "F# minor",
+   "duration": 86.3,
+   "preview": 29.64,
+   "levels": {
+    "easy": 3,
+    "normal": 5,
+    "hard": 7
+   }
+  },
+  {
+   "id": "04_turbo_engine",
+   "title": "Turbo Engine",
+   "artist": "Quasar",
+   "style": "Drum & Bass",
+   "bpm": 168,
+   "key": "A dorian",
+   "duration": 83.15,
+   "preview": 28.21,
+   "levels": {
+    "easy": 3,
+    "normal": 5,
+    "hard": 8
+   }
+  },
+  {
+   "id": "05_hyper_skyline",
+   "title": "Hyper Skyline",
+   "artist": "DJ Delta Orchestra",
+   "style": "Lo-fi",
+   "bpm": 89,
+   "key": "G minor",
+   "duration": 116.41,
+   "preview": 15.18,
+   "levels": {
+    "easy": 2,
+    "normal": 4,
+    "hard": 4
+   }
+  },
+  {
+   "id": "06_radiant_bloom",
+   "title": "Radiant Bloom",
+   "artist": "DJ Zephyr Labs",
+   "style": "Trance",
+   "bpm": 132,
+   "key": "F# minor",
+   "duration": 101.33,
+   "preview": 17.62,
+   "levels": {
+    "easy": 3,
+    "normal": 5,
+    "hard": 9
+   }
+  },
+  {
+   "id": "07_violet_echo",
+   "title": "Violet Echo",
+   "artist": "DJ Prism",
+   "style": "Funk",
+   "bpm": 100,
+   "key": "F mixolydian",
+   "duration": 103.95,
+   "preview": 3.95,
+   "levels": {
+    "easy": 2,
+    "normal": 5,
+    "hard": 5
+   }
+  },
+  {
+   "id": "08_velvet_horizon",
+   "title": "Velvet Horizon",
+   "artist": "Ion",
+   "style": "Hardcore",
+   "bpm": 164,
+   "key": "E major",
+   "duration": 96.81,
+   "preview": 5.47,
+   "levels": {
+    "easy": 3,
+    "normal": 7,
+    "hard": 10
+   }
+  }
+ ]
+}

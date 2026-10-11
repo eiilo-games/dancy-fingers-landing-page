@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dancy Fingers: four-lane rhythm game for Android</title>
+<meta name="description" content="A Dance Dance Revolution style rhythm game for your thumbs, with forty original synthesized tracks and a composer in your pocket. Play it in your browser, then get it on Google Play.">
+<link rel="canonical" href="https://dancy-fingers.com/">
+<meta name="theme-color" content="#0d0a1a">
+<meta property="og:title" content="Dancy Fingers">
+<meta property="og:description" content="Four lanes. Two thumbs. Music nobody else has. Free on Android.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dancy-fingers.com/">
+<meta property="og:site_name" content="Dancy Fingers">
+<meta property="og:image" content="https://dancy-fingers.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dancy Fingers: four lanes, two thumbs, music nobody else has. The game's neon main menu.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dancy Fingers">
+<meta name="twitter:description" content="Four lanes. Two thumbs. Music nobody else has. Free on Android.">
+<meta name="twitter:image" content="https://dancy-fingers.com/og.png">
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "WebSite",
+			"@id": "https://dancy-fingers.com/#website",
+			"url": "https://dancy-fingers.com/",
+			"name": "Dancy Fingers",
+			"publisher": { "@id": "https://dancy-fingers.com/#eiilo" }
+		},
+		{
+			"@type": "Organization",
+			"@id": "https://dancy-fingers.com/#eiilo",
+			"name": "eiilo games",
+			"email": "hi@eiilo.com"
+		},
+		{
+			"@type": ["VideoGame", "MobileApplication"],
+			"@id": "https://dancy-fingers.com/#dancy-fingers",
+			"name": "Dancy Fingers",
+			"url": "https://dancy-fingers.com/",
+			"description": "A four-lane rhythm game for your thumbs: tap each arrow as it crosses the line, to forty original synthesized tracks in eight styles, with Easy, Normal and Hard charts. The app can also compose new songs on the phone. Eight of the songs are playable in the browser.",
+			"genre": ["Rhythm", "Music"],
+			"gamePlatform": "Android",
+			"operatingSystem": "Android",
+			"applicationCategory": "GameApplication",
+			"image": "https://dancy-fingers.com/icon.png",
+			"screenshot": [
+				"https://dancy-fingers.com/shots/title.webp",
+				"https://dancy-fingers.com/shots/gameplay.webp",
+				"https://dancy-fingers.com/shots/song-select.webp",
+				"https://dancy-fingers.com/shots/results.webp",
+				"https://dancy-fingers.com/shots/generate-result.webp",
+				"https://dancy-fingers.com/shots/high-scores.webp",
+				"https://dancy-fingers.com/shots/trophies.webp"
+			],
+			"installUrl": "https://play.google.com/store/apps/details?id=com.eiilo.games.dancyfingers",
+			"offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+			"author": { "@id": "https://dancy-fingers.com/#eiilo" },
+			"publisher": { "@id": "https://dancy-fingers.com/#eiilo" }
+		}
+	]
+}
+</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top" id="top">
+	<a class="brand" href="#play"><span class="w1">DANCY</span><span class="w2">FINGERS</span></a>
+	<nav aria-label="Sections">
+		<a href="#play">Play</a>
+		<a href="#how">How it plays</a>
+		<a href="#music">The music</a>
+		<a href="#about">About</a>
+		<a href="privacy.html">Privacy</a>
+	</nav>
+	<a class="btn" href="https://play.google.com/store/apps/details?id=com.eiilo.games.dancyfingers"><span class="play-glyph" aria-hidden="true"></span>Get it on Google Play</a>
+</header>
+
+<section class="hero" id="play">
+	<div class="hero-grid">
+		<div class="hero-copy">
+			<h1>Four lanes<br><em>Two thumbs</em><br>Music <strong>nobody else has</strong></h1>
+			<p class="lede">A Dance Dance Revolution style rhythm game built for a phone held upright. Arrows fall down four lanes; tap the lane as each one crosses the line. Every track was composed and synthesized from scratch, so nothing here is a cover, a sample or a licence, and the app can write you a brand-new song on the spot.</p>
+			<a class="btn btn-big btn-primary" href="https://play.google.com/store/apps/details?id=com.eiilo.games.dancyfingers"><span class="play-glyph" aria-hidden="true"></span>Get it on Google Play</a>
+			<p class="fine">Free on Android. The phone version is this exact game with all forty tracks, a composer that makes new ones, and leaderboards and achievements on Google Play Games.</p>
+		</div>
+		<div class="phone">
+			<div class="frame" id="frame">
+				<canvas id="game" width="360" height="640" tabindex="0" aria-label="Dancy Fingers, playable. Click or tap the game once to give it focus, then use the on-screen buttons. During a song, tap the lanes or press D, F, J and K.">Your browser cannot show the game. Get it on Google Play instead.</canvas>
+				<div class="focus-hint" aria-hidden="true">
+					<span class="focus-hint-label"><span class="fine-pointer">Click to play</span><span class="coarse-pointer">Tap to play</span></span>
+					<span class="focus-hint-sub fine-pointer">Keys only work while the game is selected</span>
+				</div>
+			</div>
+			<p class="controls">Click the game first. In a song, tap the lanes or use <kbd>D</kbd> <kbd>F</kbd> <kbd>J</kbd> <kbd>K</kbd> or the arrow keys. <kbd>Esc</kbd> pauses. Eight of the forty songs are here; the rest are in the app.</p>
+			<div class="audio-toggles" role="group" aria-label="Audio">
+				<button type="button" class="toggle" id="toggle-music" aria-pressed="true">Music <span>on</span></button>
+				<button type="button" class="toggle" id="toggle-sound" aria-pressed="true">Sound <span>on</span></button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section" id="how">
+	<div class="inner">
+		<h2 class="banner" style="--c:#4fd8ff">How it plays</h2>
+		<p>Four lanes, one arrow each, a receptor line near the bottom of the screen. Arrows scroll down in time with the song and you tap the lane the moment the arrow sits on its receptor. Hold notes have a tail: keep your thumb down until it ends. Jumps put two arrows on the same beat.</p>
+		<div class="lanes" aria-label="The four lanes">
+			<div class="lane" style="--c:#ff4fa3"><svg viewBox="-1.2 -1.2 2.4 2.4" aria-hidden="true"><path d="M0-1 1 0 .45 0 .45 1-.45 1-.45 0-1 0Z" fill="#ff4fa3" stroke="#0d081f" stroke-width=".14" stroke-linejoin="round" transform="rotate(-90)"/></svg><span>Left <kbd>D</kbd></span></div>
+			<div class="lane" style="--c:#4fd8ff"><svg viewBox="-1.2 -1.2 2.4 2.4" aria-hidden="true"><path d="M0-1 1 0 .45 0 .45 1-.45 1-.45 0-1 0Z" fill="#4fd8ff" stroke="#0d081f" stroke-width=".14" stroke-linejoin="round" transform="rotate(180)"/></svg><span>Down <kbd>F</kbd></span></div>
+			<div class="lane" style="--c:#7dff4f"><svg viewBox="-1.2 -1.2 2.4 2.4" aria-hidden="true"><path d="M0-1 1 0 .45 0 .45 1-.45 1-.45 0-1 0Z" fill="#7dff4f" stroke="#0d081f" stroke-width=".14" stroke-linejoin="round"/></svg><span>Up <kbd>J</kbd></span></div>
+			<div class="lane" style="--c:#ffb84f"><svg viewBox="-1.2 -1.2 2.4 2.4" aria-hidden="true"><path d="M0-1 1 0 .45 0 .45 1-.45 1-.45 0-1 0Z" fill="#ffb84f" stroke="#0d081f" stroke-width=".14" stroke-linejoin="round" transform="rotate(90)"/></svg><span>Right <kbd>K</kbd></span></div>
+		</div>
+		<ul class="cards">
+			<li style="--c:#ffe066"><h3>Perfect <small>within 45 ms</small></h3><p>Full marks. The receptor flashes gold and throws sixteen sparks.</p></li>
+			<li style="--c:#7dff4f"><h3>Great <small>within 90 ms</small></h3><p>Three quarters of a note. Still keeps the combo going.</p></li>
+			<li style="--c:#4fd8ff"><h3>Good <small>within 150 ms</small></h3><p>Forty percent. A tap this loose still counts, barely.</p></li>
+			<li style="--c:#ff4f4f"><h3>Miss <small>180 ms late</small></h3><p>Nothing, and the combo resets. Letting go of a hold early breaks it the same way.</p></li>
+		</ul>
+		<div class="two-col">
+			<div>
+				<h3>Score and grade</h3>
+				<p>A run is worth up to 1,000,000 points, spread evenly over every note. A hold counts twice: once for the tap and once for keeping it. Your accuracy is the share of those points you earned, and it sets the grade.</p>
+				<div class="tablewrap">
+					<table>
+						<thead><tr><th>Accuracy</th><th>Grade</th></tr></thead>
+						<tbody>
+							<tr><td class="num">99% and up</td><td class="grade" style="color:#ffe066">SSS</td></tr>
+							<tr><td class="num">97%</td><td class="grade" style="color:#ffe066">SS</td></tr>
+							<tr><td class="num">94%</td><td class="grade" style="color:#ffb84f">S</td></tr>
+							<tr><td class="num">88%</td><td class="grade" style="color:#7dff4f">A</td></tr>
+							<tr><td class="num">80%</td><td class="grade" style="color:#4fd8ff">B</td></tr>
+							<tr><td class="num">70%</td><td class="grade" style="color:#b58cff">C</td></tr>
+							<tr><td class="num">below that</td><td class="grade">D</td></tr>
+							<tr><td class="num">health hit zero</td><td class="grade" style="color:#ff4f4f">F</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div>
+				<h3>Survival</h3>
+				<p>The bar along the top is your health. It starts half full, climbs a little with every hit, and drops hard on a miss or a broken hold. Reach zero and the song fails. Survival is on by default; switch it off in Settings and a bad run simply ends with a low grade instead.</p>
+				<dl class="rules">
+					<dt>Three charts per song</dt>
+					<dd>Easy, Normal and Hard, each with its own level number. Harder charts add jumps, holds and off-beat steps, never faster music.</dd>
+					<dt>Note speed and offset</dt>
+					<dd>How fast the arrows fall is yours to set, from one to ten. If your speakers or headphones lag, an audio offset shifts every note to match, in five millisecond steps.</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section" id="music">
+	<div class="inner">
+		<h2 class="banner" style="--c:#ff4fa3">The music</h2>
+		<div class="two-col">
+			<div>
+				<h3>Original, and royalty-free</h3>
+				<p>Nothing in Dancy Fingers is sampled, licensed or covered. A composer program writes each piece, picking a key, a tempo, a chord progression and a verse, chorus and bridge, then spinning motif-based melodies over them. A synthesizer renders every note, chord and drum hit from raw waveforms. Song titles and artist names come out of word lists; they are not real songs and not real artists.</p>
+				<p>Because the charts are built from the exact musical events that produced the audio, every arrow lands on a note that is actually there. No hand-timing, no drift.</p>
+			</div>
+			<div>
+				<h3>A composer in your pocket</h3>
+				<p>The app carries the same composer and synthesizer, ported to run on the phone. Tap Generate Song on the main menu, and a fresh 70 to 90 second track with all three charts appears in the song list after fifteen to thirty seconds, marked ✦ Generated. Keep the ones you like, delete the rest. There is no limit.</p>
+				<p>Eight styles rotate through the built-in set: synthpop, chiptune, house, drum &amp; bass, lo-fi, trance, funk and hardcore. One of each is playable on this page.</p>
+			</div>
+		</div>
+		<ul class="tracks" aria-label="Songs playable on this page">
+			<li style="--c:#ff4fa3"><span class="style">POP</span><span class="title">Pixel Odyssey</span><span class="meta"><b>Synthpop</b> · DJ Prism · 125 BPM · D mixolydian · Lv 3 / 4 / 6</span></li>
+			<li style="--c:#4fd8ff"><span class="style">CHIP</span><span class="title">Glass Odyssey</span><span class="meta"><b>Chiptune</b> · DJ Lumen Crew · 137 BPM · F♯ mixolydian · Lv 3 / 5 / 7</span></li>
+			<li style="--c:#7dff4f"><span class="style">HSE</span><span class="title">Ultra Skyline</span><span class="meta"><b>House</b> · DJ Cipher · 127 BPM · F♯ minor · Lv 3 / 5 / 7</span></li>
+			<li style="--c:#ffb84f"><span class="style">DNB</span><span class="title">Turbo Engine</span><span class="meta"><b>Drum &amp; bass</b> · Quasar · 168 BPM · A dorian · Lv 3 / 5 / 8</span></li>
+			<li style="--c:#b58cff"><span class="style">LOFI</span><span class="title">Hyper Skyline</span><span class="meta"><b>Lo-fi</b> · DJ Delta Orchestra · 89 BPM · G minor · Lv 2 / 4 / 4</span></li>
+			<li style="--c:#ffe066"><span class="style">TRNC</span><span class="title">Radiant Bloom</span><span class="meta"><b>Trance</b> · DJ Zephyr Labs · 132 BPM · F♯ minor · Lv 3 / 5 / 9</span></li>
+			<li style="--c:#ff4fa3"><span class="style">FUNK</span><span class="title">Violet Echo</span><span class="meta"><b>Funk</b> · DJ Prism · 100 BPM · F mixolydian · Lv 2 / 5 / 5</span></li>
+			<li style="--c:#ff4f4f"><span class="style">HARD</span><span class="title">Velvet Horizon</span><span class="meta"><b>Hardcore</b> · Ion · 164 BPM · E major · Lv 3 / 7 / 10</span></li>
+		</ul>
+	</div>
+</section>
+
+<section class="section" id="about">
+	<div class="inner">
+		<h2 class="banner" style="--c:#7dff4f">About</h2>
+		<div class="two-col">
+			<div>
+				<h3>Where it came from</h3>
+				<p>Dancy Fingers started with a simple problem: rhythm games live or die on their music, and music is the one thing a small studio cannot license forty times over. So the music got written by a program instead, and the charts fell out of the same program for free. The game around them is a classic four-lane dance game, shrunk to a phone and tuned for two thumbs.</p>
+				<p>The version on this page is that game, ported to run in a browser, with eight of the forty songs. Your scores and settings stay in this browser.</p>
+			</div>
+			<div>
+				<h3>Who made it</h3>
+				<p>Dancy Fingers is made by eiilo, a small independent studio. The app is free, supported by ads that appear between songs and never during one; the version on this page has no ads at all. No account and no sign-up: your scores, settings and generated songs stay on your phone. Sign in to Google Play Games, if you like, for leaderboards and achievements. The app also shares usage statistics, and what its ads need, with Google, with your consent where the law requires it. The <a href="privacy.html">privacy policy</a> spells all of that out.</p>
+				<p>Found a bug, or want a style the composer does not do yet? Write to <a href="mailto:hi@eiilo.com">hi@eiilo.com</a>.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section cta-band" id="get">
+	<div class="inner">
+		<h2>Take all forty with you</h2>
+		<p>The app has every song, the composer for unlimited new ones, leaderboards and achievements on Google Play Games, and a screen made for thumbs instead of a mouse.</p>
+		<a class="btn btn-big btn-primary" href="https://play.google.com/store/apps/details?id=com.eiilo.games.dancyfingers"><span class="play-glyph" aria-hidden="true"></span>Get it on Google Play</a>
+	</div>
+</section>
+
+<footer>
+	<div class="inner">
+		<span>Dancy Fingers by eiilo, 2026</span>
+		<a href="privacy.html">Privacy policy</a>
+		<a href="#top">Back to the top</a>
+	</div>
+</footer>
+
+<script src="game.js"></script>
+<script src="audio.js"></script>
+<script>
+(function () {
+	var canvas = document.getElementById("game");
+	if (!canvas.getContext) return;
+	var audio = DancyAudio.create({});
+	var game = DancyFingers.mount(canvas, { audio: audio });
+	window.DancyGame = game;   // for poking at it from the console
+
+	// The same switches as the game's settings screen, for a keyboard or a
+	// screen reader; both stay in step through the game's "settings" event.
+	var renders = [];
+	function bindToggle(id, isOn, setOn) {
+		var btn = document.getElementById(id);
+		var label = btn.querySelector("span");
+		function render() {
+			var on = isOn();
+			btn.setAttribute("aria-pressed", on ? "true" : "false");
+			btn.classList.toggle("off", !on);
+			label.textContent = on ? "on" : "off";
+		}
+		btn.addEventListener("click", function () { audio.unlock(); setOn(!isOn()); canvas.focus({ preventScroll: true }); });
+		renders.push(render);
+		render();
+	}
+	bindToggle("toggle-music", function () { return !game.settings.music_muted; }, function (on) { game.setAudio(on, !game.settings.sfx_muted); });
+	bindToggle("toggle-sound", function () { return !game.settings.sfx_muted; }, function (on) { game.setAudio(!game.settings.music_muted, on); });
+	game.on("settings", function () { renders.forEach(function (r) { r(); }); });
+
+	// Keys only reach the game while the canvas is focused. Show a
+	// "click to play" overlay until it is, and nudge it when someone
+	// presses a game key without having clicked the frame.
+	var frame = document.getElementById("frame");
+	var hint = frame.querySelector(".focus-hint");
+	function setArmed(on) { frame.classList.toggle("armed", on); }
+	canvas.addEventListener("focus", function () { setArmed(true); });
+	canvas.addEventListener("blur", function () { setArmed(false); });
+	canvas.addEventListener("pointerdown", function () { setArmed(true); });
+	document.addEventListener("pointerdown", function (e) {
+		if (!canvas.contains(e.target)) setArmed(false);
+	});
+	document.addEventListener("keydown", function (e) {
+		if (frame.classList.contains("armed") || e.repeat) return;
+		if (["KeyD", "KeyF", "KeyJ", "KeyK", "ArrowLeft", "ArrowDown", "ArrowUp", "ArrowRight", "Space"].indexOf(e.code) < 0) return;
+		var r = frame.getBoundingClientRect();
+		if (r.bottom < 0 || r.top > window.innerHeight) return;
+		hint.classList.remove("nudge");
+		void hint.offsetWidth;
+		hint.classList.add("nudge");
+	});
+	hint.addEventListener("animationend", function () { hint.classList.remove("nudge"); });
+
+	// Size the 360x640 canvas to the space available; it draws vectors, so
+	// any scale is sharp, and the game re-reads the CSS size every frame.
+	var phone = canvas.closest(".phone");
+	function fit() {
+		var availW = Math.min(phone.clientWidth, window.innerWidth - 32);
+		var availH = window.innerHeight * 0.82;
+		var s = Math.min(availW / DancyFingers.WIDTH, availH / DancyFingers.HEIGHT);
+		s = Math.max(0.55, Math.min(1.15, s));
+		canvas.style.width = Math.round(DancyFingers.WIDTH * s) + "px";
+		canvas.style.height = Math.round(DancyFingers.HEIGHT * s) + "px";
+	}
+	fit();
+	window.addEventListener("resize", fit);
+	if (window.ResizeObserver) new ResizeObserver(fit).observe(phone);
+})();
+</script>
+</body>
+</html>
